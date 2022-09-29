@@ -9,11 +9,23 @@ export function Home() {
     <Container>
       <Wrapper>
         <div>
-          <Section sectionName="Section One"
-            overlayDefault={
-              <DefaultOverlay firstTitle='LAST UPDATE' lastTitle='STARLINK MISSION' buttonText='LEARN MORE'/>
-            }
-          />
+          {[
+            'One',
+            'Two',
+            'Three',
+            'Four',
+          ].map(sectionName => (
+            <Section 
+              key={sectionName}
+              className='bg'
+              sectionName={sectionName}
+              overlayDefault={
+                <DefaultOverlay 
+                firstTitle='LAST UPDATE' 
+                lastTitle={sectionName} 
+                buttonText='LEARN MORE'/>}
+            />
+          ))}
         </div>
       </Wrapper>
     </Container>
