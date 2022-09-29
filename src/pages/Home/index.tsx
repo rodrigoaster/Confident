@@ -10,10 +10,10 @@ export function Home() {
       <Wrapper>
         <div>
           {[
-            'One',
-            'Two',
-            'Three',
-            'Four',
+            'SPACEX + T-MOBILE UPDATE',
+            'STARLINK MISSION',
+            'STARSHIP UPDATE',
+            'STARSHIP TO LAND NASA ASTRONAUTS ON THE MOON',
           ].map(sectionName => (
             <Section 
               key={sectionName}
@@ -21,9 +21,14 @@ export function Home() {
               sectionName={sectionName}
               overlayDefault={
                 <DefaultOverlay 
-                firstTitle='LAST UPDATE' 
+                firstTitle={['RECENT LAUNCH']} 
                 lastTitle={sectionName} 
-                buttonText='LEARN MORE'/>}
+                buttonText={[
+                  'LEARN MORE', 
+                  'REWATCH', 
+                  'LEARN MORE', 
+                  'LEARN MORE']}
+                />}
             />
           ))}
         </div>

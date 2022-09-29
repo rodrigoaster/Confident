@@ -1,9 +1,9 @@
 import { Container } from './styles';
-
+import { Button } from './styles'
 interface DefaultOverlayProps {
-  firstTitle: string;
+  firstTitle: Array<string>;
   lastTitle: string;
-  buttonText: string;
+  buttonText: Array<string>;
 }
 
 export function DefaultOverlay({ firstTitle, lastTitle, buttonText }: DefaultOverlayProps) {
@@ -11,7 +11,7 @@ export function DefaultOverlay({ firstTitle, lastTitle, buttonText }: DefaultOve
     <Container>
       <h3>{firstTitle}</h3>
       <strong>{lastTitle}</strong>
-      <button>{buttonText}</button>
+      <Button>{buttonText}</Button>
     </Container>
   );
 }
