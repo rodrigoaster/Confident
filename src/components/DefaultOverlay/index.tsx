@@ -1,4 +1,4 @@
-import { Container } from './styles';
+import { Container, ContainerText } from './styles';
 import { Button } from './styles'
 interface DefaultOverlayProps {
   firstTitle: Array<string>;
@@ -9,8 +9,10 @@ interface DefaultOverlayProps {
 export function DefaultOverlay({ firstTitle, lastTitle, buttonText }: DefaultOverlayProps) {
   return (
     <Container>
-      <h3>{firstTitle}</h3>
-      <strong>{lastTitle}</strong>
+      <ContainerText>
+        <h4>{firstTitle}</h4>
+        <h2>{lastTitle}</h2>
+      </ContainerText>
       <Button>{buttonText}</Button>
     </Container>
   );
