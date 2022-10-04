@@ -8,6 +8,7 @@ export function Home() {
   return (
     <Container>
       <Wrapper>
+        
         <div>
           {[
             'SPACEX + T-MOBILE UPDATE',

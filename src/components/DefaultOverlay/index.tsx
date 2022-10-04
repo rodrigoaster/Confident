@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { Container, ContainerText } from './styles';
 import { Button } from './styles'
 interface DefaultOverlayProps {
@@ -15,11 +14,9 @@ export function DefaultOverlay({ firstTitle, lastTitle, buttonText }: DefaultOve
         <h2>{lastTitle}</h2>
       </ContainerText>
         <Button>
-          <motion.button
-            
-          >
+          <button>
             {buttonText}
-          </motion.button>
+          </button>
       </Button>
     </Container>
   );
