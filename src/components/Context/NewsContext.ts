@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react"
 
-interface NewsData {
+export interface NewsData {
     sectionName: string
     overlayDefault: ReactNode
     sectionRef: React.RefObject<HTMLElement>
@@ -8,6 +8,7 @@ interface NewsData {
 
 interface NewsContext {
     wrapperRef: React.RefObject<HTMLElement>
+    registeredNews: NewsData[]
     registerNews: (news: NewsData) => void
     unregisterNews: (sectionName: string) => void
     getNewsByName: (sectionName: string) => NewsData | null
