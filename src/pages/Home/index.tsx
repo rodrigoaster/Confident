@@ -24,9 +24,6 @@ export function Home() {
                 firstTitle={['RECENT LAUNCH']} 
                 lastTitle={sectionName} 
                 buttonText={[
-                  'LEARN MORE', 
-                  'REWATCH', 
-                  'LEARN MORE', 
                   'LEARN MORE']}
                 />}
             />
