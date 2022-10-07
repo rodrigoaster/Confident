@@ -1,11 +1,5 @@
 import styled from 'styled-components';
 
-import { motion } from 'framer-motion';
-
-export const ContainerAnim = styled(motion.div)`
-  
-`
-
 export const Container = styled.div`
     display: flex;
     justify-content: space-between;
@@ -19,6 +13,16 @@ export const Container = styled.div`
     position: fixed;
     width: 100%;
 `
+
+
+export const imgLogo = styled.div`
+  @media (max-width: 995px) {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+`
+
 
 export const NavLinks = styled.ul `
     display: flex;
@@ -67,7 +71,7 @@ export const NavLinks = styled.ul `
           }
         }
 
-      @media (max-width: 971px) {
+      @media (max-width: 995px) {
         display: none;
       }
     }
