@@ -8,7 +8,7 @@ export default function Header() {
       <img src={Logo} width={"90px"} height={"60px"}/>
       <S.NavLinks>
         <li>
-          <a href="www.google.com">Falcon 9</a>
+          <a href="#">Falcon 9</a>
         </li>
         <li>
           <a href="#">Falcon Heavy</a>

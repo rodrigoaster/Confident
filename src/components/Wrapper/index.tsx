@@ -19,6 +19,8 @@ export function Wrapper({ children }) {
   const getNewsByName = useCallback((sectionName: string) => {
     return registeredNews.find(item => item.sectionName === sectionName) || null
   }, [])
+
+
   
   return (
     <NewsContext.Provider value={{
@@ -28,10 +30,11 @@ export function Wrapper({ children }) {
       unregisterNews,
       getNewsByName
     }}>
+      
       <Container ref={wrapperRef}>
         <OverlayRoot>
           {registeredNews.map(item => (
-            <NewsOverlay key={item.sectionName}>{item.overlayDefault}</NewsOverlay>
+            <NewsOverlay key={item.sectionName} news={item}>{item.overlayDefault}</NewsOverlay>
           ))}
         </OverlayRoot>
 

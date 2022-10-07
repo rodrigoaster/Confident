@@ -10,7 +10,7 @@ export const Container = styled.div`
     background-color: #000;
 
     z-index: 999;
-`;
+`
 
 export const NavLinks = styled.ul `
     display: flex;
@@ -18,6 +18,8 @@ export const NavLinks = styled.ul `
     padding: 0px 30px;
 
     list-style-type: none;
+
+    z-index: 999;
 
     > li {
         margin-right: 25px;
@@ -30,9 +32,38 @@ export const NavLinks = styled.ul `
             text-decoration: none;
             color: #fff;
             font-size: 14px;
-            font-weight: 600;
+            font-weight: 600;  
+            position: relative;
+
+            ::after {
+              
+              content: " ";
+              width: 0%;
+              height: 1px;
+              position: absolute;
+              margin-top: 3px;
+
+
+              background-color: #fff;
+             
+              bottom: 0;
+              left: 0;
+
+              transition: 0.2s ease-in-out ;
+            }
+
+            :hover {
+              ::after {
+              width: 100%;
+            }
+          }
         }
+
+      @media (max-width: 971px) {
+        display: none;
+      }
     }
+    
 `
 
 export const MenuMobile = styled.div`
@@ -47,7 +78,7 @@ export const MenuMobile = styled.div`
         margin-top: 1px;
     }
 
+    z-index: 999;
 
-
-
+    cursor: pointer;
 `
