@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
+import { motion } from 'framer-motion';
+
+export const ContainerAnim = styled(motion.div)`
+  
+`
+
 export const Container = styled.div`
     display: flex;
     justify-content: space-between;
@@ -10,6 +16,8 @@ export const Container = styled.div`
     background-color: #000;
 
     z-index: 999;
+    position: fixed;
+    width: 100%;
 `
 
 export const NavLinks = styled.ul `

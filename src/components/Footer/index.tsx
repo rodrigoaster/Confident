@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <S.Container>
       <S.Texts>
-        <span>BY RODRIGO ASTER ©</span>
+        <span>BY ASTER ©</span>
         <ul>
           <li>
             <a href="https://twitter.com/rod_aster" target="_blank">Twitter</a>
