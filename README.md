@@ -1,7 +1,7 @@
 <article>
   <h1 align="center">Project Confident</h1>
 
-  <p align="center">Clone UI Homepage <a href="https://www.spacex.com/">SpaceX<a/><p>
+  <p align="center">UI Clone Homepage <a href="https://www.spacex.com/">SpaceX<a/><p>
 
   <div style="width: 100%; height: 3px; background-color: #ccc;"></div>
   
